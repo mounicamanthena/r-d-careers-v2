@@ -11,5 +11,6 @@ Flask = "^2.2.3"
 [tool.poetry.dev-dependencies]
 
 [build-system]
+file = ["requirements.txt"]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
