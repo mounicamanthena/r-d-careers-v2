@@ -1,0 +1,32 @@
+ * {
+          margin: 0;
+          padding: 0;
+          }
+      .topnav {
+        overflow: hidden;
+        background-color: #35CAB1;
+      }
+.topnav-right{
+         float:right;
+      }
+.topnav a {
+        color: gb(123,78,154);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      
+      .topnav a:hover {
+        color: #ff66b2;
+      }
+    
+      h1{
+        font-size: 50px;
+        font-family: Gill Sans;
+        font-weight: normal;
+        font-style: italic;
+        text-align: center;
+        color: rgb(123,78,154);
+        margin: 0px;
+      }
