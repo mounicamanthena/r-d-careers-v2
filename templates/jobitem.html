@@ -1,7 +1,7 @@
 <div class="border-bottom row" style="margin-bottom:16px; padding-bottom:8px">
   <div class="col-9">
         <div>
-            <h4 style = "margin-bottom:4px; color: #C9ABDC;">
+            <h4 style = "margin-bottom:4px; color: rgb(100,100,100);">
               {{job['title']}}
             </h4> 
         </div>
@@ -15,7 +15,7 @@
         </div>
         {% endif %}
   </div>
-  <div class="col-3 align-self-center ">
-    <button type="button" class="btn btn-outline-success float:right">Apply</button>
+  <div class="col-3 align-self-center col-auto " >
+    <a href="mailto:mounicamanthena15@gmail.com?subject=Application%20for%20{{job['title']}}&body=My%20Name%3A%20%3CYour%20name%20here%3E%0D%0A%0D%0AMy%20Resume%3A%20%3CResume%20link%3E%0D%0A%0D%0AMy%20LinkedIn%3A%20%3CLinkedin%20link%3E" type="button" class="apply_success apply_btn" >Apply</a>
   </div>
 </div>
