@@ -7,11 +7,7 @@
         type = "image/x-icon">
           
       {% include 'bootstrap.html' %}
-      <style>
-         .job_details{
-           margin-top: 50px ;
-         }  
-      </style>
+      
   </head>
   <body>
      {% include 'navbar.html' %}
@@ -32,9 +28,12 @@
             <li> {{ line}}</li>
             {% endfor %}
           </ul>
-          <h4>Salary</h4>
-          <p>{{job.currency}}{{job.salary}}</p>
+          {% if job.salary!=None  %}
+              <h4>Salary</h4>
+              <p>{{job.currency}}{{job.salary}}</p>
+          {% endif %}
       </div>
+      {% include 'app_form.html'%}
      <div >
         {% include 'footer.html' %}
      </div>

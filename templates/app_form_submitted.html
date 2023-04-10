@@ -1,0 +1,40 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+      <title>{{job.title}} - R&D Careers</title>
+      <link rel = "icon" href = 
+"https://r-d-careers.mounicamanthena.repl.co/static/logo.png" 
+        type = "image/x-icon">
+          
+      {% include 'bootstrap.html' %}
+  </head>
+  <body>
+      {% include 'navbar.html' %}
+      {% include 'banner.html' %}
+      <div class = "container">   
+          <h1 class="text-center mt-2 mb-4">R&D Careers</h1>
+          <p> Your Application for the job role of <b>{{job['title']}}</b> at R&D has been submitted successfully.</p>
+
+          <b>Full Name</b> 
+          <div class= "mb-4">{{app_form['full_name']}}</div>
+
+          <b>Email</b>
+          <div class= "mb-4">{{app_form['email']}}</div>
+
+          <b>LinkedIn URL</b>
+          <div class= "mb-4">{{app_form['linkedin_url']}}</div>
+
+          <b>Education</b>
+          <div class= "mb-4">{{app_form['education']}}</div>
+
+          <b>Work Experience</b>
+          <div class= "mb-4">{{app_form['work_experience']}}</div>
+
+          <b>Resume URL</b>
+          <div class= "mb-4">{{app_form['reume_url']}}</div>
+        
+      </div>
+    
+    
+  </body>
+</html>
